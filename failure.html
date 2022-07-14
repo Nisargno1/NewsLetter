@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Failed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+div {
+  width: 350px;
+  height: 50px;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 15s infinite;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#img {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 500px;}
+}
+</style>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid" style="margin:200px">
+  <div class="container">
+    <h1 class="display-4">Oops! </h1>
+    <p class="lead">There is some issues signing up to the news letter.</p><br>
+    <img src="images/cat1.png" alt="Noo.."><br>
+     <form action="/failure" method="post">
+
+    <button type="submit" class="btn btn-primary" data-toggle="button" autocomplete="off" onclick="document.location = '/signup.html'">
+    Try Again!
+    </button>
+
+  </form>
+  </div>
+
+</div>
+  </body>
+</html>
